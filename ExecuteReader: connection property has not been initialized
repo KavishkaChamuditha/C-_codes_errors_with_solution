@@ -1,0 +1,12 @@
+eroor: ExecuteReader: connection property has not been initialized 
+
+//this is mostly can happened because of the sql connection first check this code 
+ SqlConnection con = new SqlConnection(@"Add-your-location-of-database");
+ SqlCommand cmd    = new SqlCommand(querry, con);
+ 
+ //if not this error can occure if your going to view the data in database in to a table in your system 
+ //check the  command you gave correcty of the connection "con" and excecution return "querry" in sqlCommand  
+            DataTable table = new DataTable();
+            SqlConnection con = new SqlConnection(@"Add-your-location-of-database");
+            SqlCommand cmd = new SqlCommand(querry,con);     
+            
